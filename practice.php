@@ -1,35 +1,30 @@
 <?php
-$a = 3;
-$b = 7;
-echo $a+$b;
+$name = "fumiyuki nagashima";
+if ($name = "fumiyuki nagashima") {
+    echo "私は".$name."です";
+}   else {
+    echo "あなたの名前ではありません";
+}
+//nameの値が表示される//
 
+$total = 0;
+for($i = 1; $i <=10000; $i++){
+    $total += $i;
+}
+echo $total;
+//1から10000までの合計を表示//
 
-$array_month = ["１月","２月","３月","４月","５月","６月","７月","８","９月","１０月","１１月","１２月"];
-echo $array_month[7];
+$fruits = array("apple","banana","orange","grape","strawberry");
 
-$hello = "Hello,";
-$name = "Fumiyuki";
-$world = "'s World!";
-echo $hello.$name.$world;
+foreach($fruits as $fruit){
+    echo $fruit;
+    echo "\n";
+}
+//furuitsを順番に表示//
 
-$tech_boost = "tech";
-$tech_boost .= " boost";
-echo $tech_boost;
-
-$calendar2018 = [
-    "January" => "1月",
-    "Feuruary" => "2月",
-    "March" => "3月",
-    "April" => "4月",
-    "May" => "5月",
-    "June" => "6月",
-    "July" => "7月",
-    "August" => "8月",
-    "September" => "9月",
-    "October" => "10月",
-    "November" => "11月",
-    "December" => "12月",
-    ];
-    
-// 12月を表示する
-echo $calendar2018["December"];
+for($i = 1; $i <=100; $i++){
+    if($i % 5 == 0){
+        echo $i;
+        echo "\n";
+    }
+}
